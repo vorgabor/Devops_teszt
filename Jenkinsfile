@@ -25,6 +25,7 @@ pipeline {
                 stage("Firewall"){
                     steps {
                         sh 'sudo firewall-cmd --add-port=8888/tcp'
+                        sh 'sudo firewall-cmd --reload'
                         sh 'curl 192.168.56.120:8888'
                     }
                 }
