@@ -9,7 +9,7 @@ pipeline {
                 }
                 stage("Download"){
                     steps {
-                        sh 'rm -rf /home/jenkins/worker/workspace/teszt/jenkins/'
+                        sh 'rm -rf /home/jenkins/worker/workspace/github/jenkins/'
                         sh 'git clone https://github.com/tothti/jenkins.git'
                     }
                 }
