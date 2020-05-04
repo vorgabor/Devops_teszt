@@ -16,7 +16,7 @@ pipeline {
                 }
                 stage("Copy"){
                     steps {
-                        sh 'cp /home/jenkins/worker/workspace/teszt/jenkins/index.js /tmp'
+                        sh 'cp /home/jenkins/worker/workspace/github/jenkins/index.js /tmp'
                         sh 'sudo systemctl daemon-reload'
                         sh 'sudo systemctl start index_js'
                     }
