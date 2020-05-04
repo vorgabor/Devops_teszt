@@ -11,6 +11,7 @@ pipeline {
                     steps {
                         sh 'rm -rf /home/jenkins/worker/workspace/github/jenkins/'
                         sh 'git clone https://github.com/tothti/jenkins.git'
+                        sh 'sudo cp /home/jenkins/worker/workspace/github/index_js.service /lib/systemd/system'
                     }
                 }
                 stage("Copy"){
