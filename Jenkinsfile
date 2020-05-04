@@ -3,7 +3,7 @@ pipeline {
            stages {
                 stage("Install") {
                      steps {
-                          sh 'sudo yum install -y epel-release nodejs'
+                          sh 'sudo yum install -y epel-release'
                           sh 'sudo yum install -y nodejs'
                      }
                 }
